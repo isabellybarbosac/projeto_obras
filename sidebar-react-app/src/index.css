@@ -1,0 +1,104 @@
+/* ---------- Cores gerais ---------- */
+:root {
+  --background-grey: #292929;
+  --background-green: #D5F5E3;
+  --text-green: #1E8449;
+}
+
+/* ---------- Estilo global ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-grey);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+  color: #fff;
+  background-color: var(--background-grey);
+}
+
+/* ---------- Logo ---------- */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 10px;
+}
+
+/* ---------- Ícone da logo ---------- */
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background: rgba(28, 17, 41, 0.88);
+  color: #fff;
+  padding: 10px;
+}
+
+/* ---------- Menu ---------- */
+.menu-bar {
+  height: 88vh;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1rem;
+}
+
+/* ---------- Card de visualização PDF ---------- */
+.pdf-card {
+  background-color: var(--background-green);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  color: var(--text-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  width: 300px;
+}
+
+.pdf-card:hover {
+  transform: scale(1.02);
+}
+
+/* ---------- Preview do PDF ---------- */
+.pdf-preview {
+  width: 100%;
+  height: 180px;
+  border: none;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+/* ---------- Título e descrição ---------- */
+.pdf-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--text-green);
+}
+
+.pdf-description {
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--text-green);
+}
+
+/* ---------- Grid ---------- */
+.pdf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 32px;
+}
+
